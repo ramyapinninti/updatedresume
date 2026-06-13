@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portfolio & CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Clean, modern Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar Profile Panel -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <!-- Replace with your own profile image path -->
+                    <img src="images/profile.png" alt="Profile Picture" class="avatar">
+                </div>
+                <h2>Andrew Heneghan</h2>
+                <p class="subtitle">M.S. in Applied Statistics</p>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:your.email@example.com">email@example.com</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/username</a></li>
+                    <li><strong>Location:</strong> West Chester, PA</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main CV Content Area -->
+        <main class="main-content">
+            
+            <!-- Objective Section -->
+            <section class="card animate-fade-in">
+                <h2>Objective</h2>
+                <p>Well-trained statistician, with an M.S. in Applied Statistics, seeking a career in data analytics or statistics. Skilled in using data to understand business patterns and trends. Excellent analytical thinker with outstanding attention to detail and organizational skills. Collaborative team member who enjoys working with others to meet expectations. Strong communicator and work ethic with desire to learn.</p>
+            </section>
+
+            <!-- Education Section -->
+            <section class="card">
+                <h2>Education</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>M.S. in Applied Statistics</h3>
+                        <span class="date">May 2024</span>
+                    </div>
+                    <p class="institution">West Chester University of Pennsylvania</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>B.S. in Mathematics (Statistics Concentration)</h3>
+                        <span class="date">May 2023</span>
+                    </div>
+                    <p class="institution">West Chester University of Pennsylvania</p>
+                    <p class="details">Minors in Biology and Studio Art | <em>Summa Cum Laude</em> (Dean’s List 2019 – 2023)</p>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="card">
+                <h2>Professional Experience</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Data Entry Processor (Internship)</h3>
+                        <span class="date">May 2023 — Dec 2023</span>
+                    </div>
+                    <p class="institution">Office of Finance and Business Services, WCU</p>
+                    <ul>
+                        <li>Updated and cleaned asset and fund records, streamlining the transition to a modern data management architecture.</li>
+                        <li>Processed and finalized graduate assistant hiring workflows to maximize office operational efficiency.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Statistical Intern</h3>
+                        <span class="date">Feb 2023 — May 2023</span>
+                    </div>
+                    <p class="institution">Francis Harvey Green Library, WCU</p>
+                    <ul>
+                        <li>Engineered analytical spreadsheets and operational reports detailing database utility metrics for library stakeholders.</li>
+                        <li>Constructed diagnostic data visualizations (histograms, bubble maps) to evaluate traffic and material usage patterns.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Technical Skills Section -->
+            <section class="card">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages & Analytics</h3>
+                        <div class="tags">
+                            <span class="tag">R</span>
+                            <span class="tag">SAS</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">SPSS</span>
+                            <span class="tag">Power BI</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Workflow</h3>
+                        <div class="tags">
+                            <span class="tag">Excel (Advanced)</span>
+                            <span class="tag">R Markdown</span>
+                            <span class="tag">Shiny Apps</span>
+                            <span class="tag">Tableau</span>
+                            <span class="tag">Git/GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Original Projects Archive (Dropdown or Simplified List style) -->
+            <section class="card">
+                <h2>Prior Highlighted Projects</h2>
+                <div class="project-list-compact">
+                    <div class="compact-proj">
+                        <strong>Predicting Banking Client Term Deposits</strong> — Applied logistic regression, neural networks, and decision trees to optimize marketing outreach campaigns. <a href="#" target="_blank">View RPubs</a>
+                    </div>
+                    <div class="compact-proj">
+                        <strong>Taipei Real Estate Regression Analysis</strong> — Designed log-transformed interaction models to isolate geographical determinants of real estate valuation. <a href="#" target="_blank">View Report</a>
+                    </div>
+                    <div class="compact-proj">
+                        <strong>SBA Bank Loan Performance</strong> — Compared performance thresholds of simple, systematic, and stratified sampling methods. <a href="#" target="_blank">View Analysis</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Assignment Submissions Section (Required by Professor) -->
+            <section id="submissions" class="card submission-zone">
+                <h2>Assignment Submissions</h2>
+                <p class="section-intro">Course project milestones, interactive applications, and source file submissions for evaluation.</p>
+                
+                <!-- Submission Item 1 -->
+                <div class="submission-card">
+                    <div class="submission-meta">
+                        <span class="badge">Assignment 1</span>
+                        <h3 class="submission-title">Data Visualization Application</h3>
+                        <a href="https://ramyapinninti.github.io/STA553/" class="btn-submit" target="_blank">Launch Project Webpage</a>
+                    </div>
+                    <div class="abstract-box">
+                        <h4>Abstract Description</h4>
+                        <p>This abstract is in progress.</p>
+                    </div>
+                </div>
+
+                <!-- Submission Item 2 -->
+                <div class="submission-card">
+                    <div class="submission-meta">
+                        <span class="badge">Assignment 2</span>
+                        <h3 class="submission-title">Interactive Maps Assignment</h3>
+                        <a href="https://ramyapinninti.github.io/STA553/" class="btn-submit" target="_blank">Launch Project Webpage</a>
+                    </div>
+                    <div class="abstract-box">
+                        <h4>Abstract Description</h4>
+                        <p>This section will contain the abstract, methodology summary, and a link to the deployed HTML output or dataset dashboard for the upcoming assignment phase.</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
