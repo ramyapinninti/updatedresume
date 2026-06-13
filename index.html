@@ -3,173 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Portfolio & CV</title>
+    <title>Data Portfolio & Professional CV</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Clean, modern Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Premium Google Fonts for modern tech aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <!-- Sidebar Profile Panel -->
-        <aside class="sidebar">
-            <div class="profile-card">
-                <div class="avatar-container">
-                    <!-- Replace with your own profile image path -->
-                    <img src="images/profile.png" alt="Profile Picture" class="avatar">
+    <div class="app-layout">
+        
+        <!-- Header Banner / Identity Panel -->
+        <header class="main-header">
+            <div class="header-inner">
+                <div class="brand">
+                    <h1>Your Name</h1>
+                    <p class="role-badge">Data Analyst & Statistician</p>
                 </div>
-                <h2>Andrew Heneghan</h2>
-                <p class="subtitle">M.S. in Applied Statistics</p>
+                <div class="quick-contact">
+                    <span>📍 Greater Philadelphia Area</span>
+                    <span>✉️ <a href="mailto:your.email@example.com">your.email@example.com</a></span>
+                    <span>🌐 <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></span>
+                </div>
             </div>
+        </header>
+
+        <div class="content-grid">
             
-            <div class="contact-info">
-                <h3>Contact</h3>
-                <ul>
-                    <li><strong>Email:</strong> <a href="mailto:your.email@example.com">email@example.com</a></li>
-                    <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
-                    <li><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/username</a></li>
-                    <li><strong>Location:</strong> West Chester, PA</li>
-                </ul>
-            </div>
-        </aside>
+            <!-- Sidebar: About & Technical Competencies -->
+            <aside class="sidebar-panel">
+                <section class="panel-section">
+                    <h2>Profile</h2>
+                    <p class="profile-text">
+                        Analytical thinker specializing in statistical modeling, data pipelines, and predictive architecture. Passionate about translating complex multi-variable datasets into interactive, clear visual narratives.
+                    </p>
+                </section>
 
-        <!-- Main CV Content Area -->
-        <main class="main-content">
-            
-            <!-- Objective Section -->
-            <section class="card animate-fade-in">
-                <h2>Objective</h2>
-                <p>Well-trained statistician, with an M.S. in Applied Statistics, seeking a career in data analytics or statistics. Skilled in using data to understand business patterns and trends. Excellent analytical thinker with outstanding attention to detail and organizational skills. Collaborative team member who enjoys working with others to meet expectations. Strong communicator and work ethic with desire to learn.</p>
-            </section>
-
-            <!-- Education Section -->
-            <section class="card">
-                <h2>Education</h2>
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>M.S. in Applied Statistics</h3>
-                        <span class="date">May 2024</span>
-                    </div>
-                    <p class="institution">West Chester University of Pennsylvania</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>B.S. in Mathematics (Statistics Concentration)</h3>
-                        <span class="date">May 2023</span>
-                    </div>
-                    <p class="institution">West Chester University of Pennsylvania</p>
-                    <p class="details">Minors in Biology and Studio Art | <em>Summa Cum Laude</em> (Dean’s List 2019 – 2023)</p>
-                </div>
-            </section>
-
-            <!-- Experience Section -->
-            <section class="card">
-                <h2>Professional Experience</h2>
-                
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>Data Entry Processor (Internship)</h3>
-                        <span class="date">May 2023 — Dec 2023</span>
-                    </div>
-                    <p class="institution">Office of Finance and Business Services, WCU</p>
-                    <ul>
-                        <li>Updated and cleaned asset and fund records, streamlining the transition to a modern data management architecture.</li>
-                        <li>Processed and finalized graduate assistant hiring workflows to maximize office operational efficiency.</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <h3>Statistical Intern</h3>
-                        <span class="date">Feb 2023 — May 2023</span>
-                    </div>
-                    <p class="institution">Francis Harvey Green Library, WCU</p>
-                    <ul>
-                        <li>Engineered analytical spreadsheets and operational reports detailing database utility metrics for library stakeholders.</li>
-                        <li>Constructed diagnostic data visualizations (histograms, bubble maps) to evaluate traffic and material usage patterns.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Technical Skills Section -->
-            <section class="card">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Languages & Analytics</h3>
-                        <div class="tags">
-                            <span class="tag">R</span>
-                            <span class="tag">SAS</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">SPSS</span>
-                            <span class="tag">Power BI</span>
+                <section class="panel-section">
+                    <h2>Technical Toolkit</h2>
+                    
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <div class="pill-container">
+                            <span class="pill core">R Language</span>
+                            <span class="pill core">Python</span>
+                            <span class="pill core">SQL</span>
+                            <span class="pill">SAS</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Tools & Workflow</h3>
-                        <div class="tags">
-                            <span class="tag">Excel (Advanced)</span>
-                            <span class="tag">R Markdown</span>
-                            <span class="tag">Shiny Apps</span>
-                            <span class="tag">Tableau</span>
-                            <span class="tag">Git/GitHub</span>
+
+                    <div class="skill-group">
+                        <h3>Frameworks & Tools</h3>
+                        <div class="pill-container">
+                            <span class="pill tool">R Markdown / Quarto</span>
+                            <span class="pill tool">Shiny Apps</span>
+                            <span class="pill tool">Git & GitHub</span>
+                            <span class="pill">Power Automate</span>
+                            <span class="pill">Tableau & Power BI</span>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </aside>
 
-            <!-- Original Projects Archive (Dropdown or Simplified List style) -->
-            <section class="card">
-                <h2>Prior Highlighted Projects</h2>
-                <div class="project-list-compact">
-                    <div class="compact-proj">
-                        <strong>Predicting Banking Client Term Deposits</strong> — Applied logistic regression, neural networks, and decision trees to optimize marketing outreach campaigns. <a href="#" target="_blank">View RPubs</a>
-                    </div>
-                    <div class="compact-proj">
-                        <strong>Taipei Real Estate Regression Analysis</strong> — Designed log-transformed interaction models to isolate geographical determinants of real estate valuation. <a href="#" target="_blank">View Report</a>
-                    </div>
-                    <div class="compact-proj">
-                        <strong>SBA Bank Loan Performance</strong> — Compared performance thresholds of simple, systematic, and stratified sampling methods. <a href="#" target="_blank">View Analysis</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Assignment Submissions Section (Required by Professor) -->
-            <section id="submissions" class="card submission-zone">
-                <h2>Assignment Submissions</h2>
-                <p class="section-intro">Course project milestones, interactive applications, and source file submissions for evaluation.</p>
+            <!-- Main Stream: Education, Experience, & Submissions -->
+            <main class="main-panel">
                 
-                <!-- Submission Item 1 -->
-                <div class="submission-card">
-                    <div class="submission-meta">
-                        <span class="badge">Assignment 1</span>
-                        <h3 class="submission-title">Data Visualization Application</h3>
-                        <a href="https://ramyapinninti.github.io/STA553/" class="btn-submit" target="_blank">Launch Project Webpage</a>
+                <!-- Education Section -->
+                <section class="content-block">
+                    <h2 class="section-title">Education</h2>
+                    
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <h3>M.S. in Applied Statistics</h3>
+                            <span class="time-tag">Expected Graduation Year</span>
+                        </div>
+                        <p class="subtext-location">University Name Here</p>
+                        <p class="body-text">Focus areas: Statistical Computing, Predictive Modeling, Advanced Visualizations.</p>
                     </div>
-                    <div class="abstract-box">
-                        <h4>Abstract Description</h4>
-                        <p>This abstract is in progress.</p>
-                    </div>
-                </div>
 
-                <!-- Submission Item 2 -->
-                <div class="submission-card">
-                    <div class="submission-meta">
-                        <span class="badge">Assignment 2</span>
-                        <h3 class="submission-title">Interactive Maps Assignment</h3>
-                        <a href="https://ramyapinninti.github.io/STA553/" class="btn-submit" target="_blank">Launch Project Webpage</a>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <h3>B.S. in Mathematics / Scientific Field</h3>
+                            <span class="time-tag">Graduation Year</span>
+                        </div>
+                        <p class="subtext-location">University Name Here</p>
+                        <p class="body-text">Honors / Minors / Key focus notes go here.</p>
                     </div>
-                    <div class="abstract-box">
-                        <h4>Abstract Description</h4>
-                        <p>This section will contain the abstract, methodology summary, and a link to the deployed HTML output or dataset dashboard for the upcoming assignment phase.</p>
+                </section>
+
+                <!-- Professional Projects Section -->
+                <section class="content-block">
+                    <h2 class="section-title">Highlighted Projects</h2>
+                    
+                    <div class="project-showcase">
+                        <div class="project-header">
+                            <h3>Dynamic Media & Entertainment Analytics Dashboard</h3>
+                            <a href="#" class="inline-link" target="_blank">Repository ↗</a>
+                        </div>
+                        <p class="body-text">Developed an interactive pipeline scraping and analyzing financial returns and social media reception trends across major streaming media landscapes.</p>
                     </div>
-                </div>
 
-            </section>
+                    <div class="project-showcase">
+                        <div class="project-header">
+                            <h3>Automated Data Quality & Tracking Architecture</h3>
+                            <a href="#" class="inline-link" target="_blank">View Live ↗</a>
+                        </div>
+                        <p class="body-text">Engineered zero-touch Office Scripts and workflow automation routines that scrubbed, sorted, and validated screening trackers for high-volume data collection tables.</p>
+                    </div>
+                </section>
 
-        </main>
+                <!-- Dynamic Assignment Submissions Zone -->
+                <section id="submissions" class="content-block submissions-container">
+                    <h2 class="section-title text-vibrant">Course Assignment Submissions</h2>
+                    <p class="block-intro">Live interactive deployments and statutory documentation for grading evaluation.</p>
+
+                    <!-- Active Assignment 1 -->
+                    <div class="submission-node active">
+                        <div class="node-meta">
+                            <span class="status-badge live">Assignment 1</span>
+                            <h3>Advanced Spatial Data & Leaflet Visualizations</h3>
+                            <a href="https://yourusername.github.io/repository-name/assignment1.html" class="action-btn" target="_blank">Launch Project Space</a>
+                        </div>
+                        <div class="abstract-container">
+                            <h4>Abstract & Methodology Summary</h4>
+                            <p>
+                                This analysis maps dense geographical coordinates using spatial clustering algorithms and structural overlays. The target focus centers on identifying variation in property valuations relative to public transport proximity matrices. Data operations run inside an automated script workflow, modeling distributions using robust non-parametric techniques. Residual variances were verified to meet standard homoscedasticity assumptions before deploying reactive color factors across map elements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Assignment 2 Placeholder -->
+                    <div class="submission-node scheduled">
+                        <div class="node-meta">
+                            <span class="status-badge pending">Assignment 2</span>
+                            <h3>Predictive Modeling & Statistical Inference Report</h3>
+                            <span class="system-status">Pending Phase Launch</span>
+                        </div>
+                        <div class="abstract-container">
+                            <h4>Abstract & Methodology Summary</h4>
+                            <p>This workspace will dynamically frame the next analytical submission, including direct links to data outputs, scripts, and model metrics.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
     </div>
 
 </body>
