@@ -6,7 +6,7 @@
     --text-regular: #334155;
     --text-muted: #64748b;
     
-
+    /* Muted, Professional Palette (Navy, Slate, & Charcoal) */
     --brand-primary: #1e3a8a;      /* Academic Navy */
     --brand-secondary: #0f766e;    /* Muted Teal */
     --brand-accent: #047857;       /* Conservative Green */
@@ -35,6 +35,355 @@ body {
 }
 
 .app-layout {
+    max-width: 1000px; /* Restrained width to mimic standard A4/Letter bounds */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Header Panel UI (Subdued Academic Banner) */
+.main-header {
+    background: #1e293b; /* Classic Charcoal/Slate executive header */
+    color: #f8fafc;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.brand h1 {
+    font-family: 'Lora', serif; /* Traditional academic serif */
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+}
+
+.role-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.quick-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.quick-contact a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px dashed #38bdf8;
+}
+
+.quick-contact a:hover {
+    border-bottom-style: solid;
+}
+
+/* Structural Two-Column Core Layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Slimmer sidebar */
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* Sidebar Components styling */
+.sidebar-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.panel-section {
+    background-color: var(--card-surface);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-soft);
+}
+
+.panel-section h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--brand-primary);
+    padding-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.profile-text {
+    font-size: 0.88rem;
+    color: var(--text-regular);
+}
+
+.skill-group {
+    margin-bottom: 1rem;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-group h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.pill {
+    background-color: #f1f5f9;
+    color: var(--text-regular);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.6rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-soft);
+}
+
+.pill.core {
+    background-color: #e2e8f0;
+    color: var(--brand-primary);
+    font-weight: 600;
+}
+
+.pill.tool {
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+/* Main Performance Stream Area */
+.main-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-block {
+    background-color: var(--card-surface);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-soft);
+}
+
+.section-title {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-soft);
+    padding-bottom: 0.35rem;
+}
+
+/* Timeline / Experience Components (Traditional CV formatting) */
+.timeline-card {
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid var(--brand-primary);
+    margin-bottom: 1.5rem;
+}
+
+.timeline-card:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--brand-primary);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.card-header h3 {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-family: 'Lora', serif;
+}
+
+.time-tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-soft);
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+    letter-spacing: 0.02em;
+}
+
+.subtext-location {
+    font-size: 0.85rem;
+    color: var(--brand-secondary);
+    font-weight: 600;
+    margin: 0.15rem 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.body-text {
+    font-size: 0.88rem;
+    color: var(--text-regular);
+}
+
+.experience-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.88rem;
+    color: var(--text-regular);
+}
+
+/* The Submissions Styling Zone (Cleaned up block) */
+.submissions-container {
+    border-top: 4px solid var(--brand-primary);
+    border-left: 1px solid var(--border-soft);
+    border-right: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.block-intro {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.submission-node {
+    background: #ffffff;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.submission-node:last-child {
+    margin-bottom: 0;
+}
+
+.node-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.status-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    width: fit-content;
+    background-color: #e2e8f0;
+    color: #334155;
+    border: 1px solid var(--border-soft);
+}
+
+.node-meta h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.action-btn {
+    display: inline-block;
+    background: #334155; /* Neutral slate button */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    width: fit-content;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition: background 0.2s ease;
+}
+
+.action-btn:hover {
+    background: #1e293b;
+}
+
+/* Abstract Container styling */
+.abstract-container {
+    background-color: #f8fafc;
+    border-top: 1px solid var(--border-soft);
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+}
+
+.abstract-container h4 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brand-primary);
+    margin-bottom: 0.35rem;
+}
+
+.abstract-container p {
+    font-size: 0.82rem;
+    color: var(--text-regular);
+    text-align: justify;
+    margin-bottom: 0.35rem;
+}
+
+/* Dynamic Mobile Adaptability rules */
+@media (max-width: 800px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .quick-contact {
+        text-align: left;
+    }
+    body {
+        padding: 0.5rem 0.25rem;
+    }
+}.app-layout {
     max-width: 1000px; /* Restrained width to mimic standard A4/Letter bounds */
     margin: 0 auto;
     display: flex;
